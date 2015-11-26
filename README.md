@@ -1,4 +1,4 @@
-See project running at: https://papo-reto-solr.herokuapp.com/
+See project running at: https://papo-reto-solr.herokuapp.com/products
 
 ## Development ##
 * Start a Solr instance on port 8982:
