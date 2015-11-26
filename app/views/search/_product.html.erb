@@ -1,0 +1,23 @@
+<a href="<%= product_path(object) %>" class="list-group-item">
+  <div class="media">
+    <div class="media-left media-middle">
+      <img class="media-object" src="<%= object.picture %>">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading"><%= object.title %></h4>
+      <p><%= object.description %></p>
+      <p>
+        <small>
+          Especificações:
+          <ul>
+            <% object.properties.each do |key,value| %>
+              <li>
+                <strong><%=t(key, scope: [:activerecord, :attributes, :product])%></strong>: <%= value %>
+              </li>
+            <% end %>
+          </ul>
+        </small>
+      </p>
+    </div>
+  </div>
+</a>
